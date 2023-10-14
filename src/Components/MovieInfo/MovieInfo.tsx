@@ -33,7 +33,7 @@ const MovieInfo = () => {
           </List>
         </Buttons>
         <Imdb>
-          <Image src={imdb} alt="" />
+          <Image src={imdb} alt="" width={54} height={27}/>
           <Ratings>7.3</Ratings>
           <Ua4K>U/A</Ua4K>
           <Ua4K>4K</Ua4K>

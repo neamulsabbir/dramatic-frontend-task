@@ -5,19 +5,19 @@ import Profile from "../../../assets/profile.png";
 import GiftIcon from "../SVGIcon/GiftIcon";
 import BellIcon from "../SVGIcon/BellIcon";
 import Link from "next/link";
-import { Active, CustomP, Input, NavbarContainer, ProfileImg } from "./Stytle";
+import { Active, CustomP, Input, DesktopNavbarContainer, ProfileImg,NewP } from "./Stytle";
 
 const Navbar = () => {
   return (
     <div>
-      <NavbarContainer>
+      <DesktopNavbarContainer>
         <Link href="/">
           <Image src={logo} alt="logo" />
         </Link>
         <CustomP>HOME</CustomP>
         <CustomP>TV SHOW</CustomP>
         <CustomP>MOVIES</CustomP>
-        <CustomP>NEW</CustomP>
+        <NewP>NEW</NewP>
         <Input type="search" placeholder="Search" />
         <GiftIcon />
         <BellIcon />
@@ -25,7 +25,7 @@ const Navbar = () => {
           <Image src={Profile} alt="logo" />
           <Active></Active>
         </ProfileImg>
-      </NavbarContainer>
+      </DesktopNavbarContainer>
     </div>
   );
 };

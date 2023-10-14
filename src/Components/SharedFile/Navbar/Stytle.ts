@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const NavbarContainer = styled.header`
+export const DesktopNavbarContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,6 +11,7 @@ export const NavbarContainer = styled.header`
   );
   padding-left: 26px;
   padding-right: 32px;
+  
 `;
 export const LeftSide = styled.div`
   display: flex;
@@ -40,6 +41,9 @@ export const Input = styled.input`
   @media screen and (max-width: 1080px) {
     margin-left: 0px;
   }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 `;
 export const LeftCol = styled.div`
   display: flex;
@@ -48,21 +52,28 @@ export const LeftCol = styled.div`
 `;
 export const CustomP = styled.p`
   margin: 0px;
-  /* padding-left: 52px; */
   color: #fff;
   font-size: 16px;
   font-weight: 700;
 `;
+export const NewP = styled.p`
+margin: 0px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+margin-right: 30px;
+`
 export const ProfileImg = styled.div`
   padding: 17px 0px;
   display: flex;
   flex-direction: column;
 `;
+
 export const Active = styled.div`
   width: 14px;
   height: 14px;
   background-color: #3bff37;
   border-radius: 100%;
-  margin-top: -15px;
+  margin-top: -13px;
   margin-left: 42px;
 `;
