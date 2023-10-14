@@ -1,12 +1,12 @@
 import Image from "next/image";
-import tamasha from "../../assets/image1.png";
-import plus from "../../assets/plus.png";
-import vector from "../../assets/vector.png";
-import imdb from "../../assets/imdb.png";
+import tamasha from "../../../../assets/image1.png";
+import imdb from '../../../../assets/imdb.png'
+import vector from '../../../../assets/vector.png'
+import plus from '../../../../assets/plus.png'
 import styled from "styled-components";
-import MovieDetails from "../SharedFile/MovieDetails/MovieDetails";
-import DramaType from "../SharedFile/DramaType/DramaType";
-import SideMenu from "../SharedFile/SideMenu/SideMenu";
+import SideMenu from "@/Components/SharedFile/SideMenu/SideMenu";
+import DramaType from "@/Components/SharedFile/DramaType/DramaType";
+import MovieDetails from "@/Components/SharedFile/MovieDetails/MovieDetails";
 
 const MovieInfo = () => {
   return (

@@ -1,8 +1,8 @@
 "use client";
 import styled from "styled-components";
-import poster from "../../../assets/poster.jpg";
-import MoviesCard from "./MoviesCard/MoviesCard";
-import DownArrow from "../SVGIcon/DownArrow";
+import poster from "../../../../assets/poster.jpg";
+import DownArrow from "@/Components/SharedFile/SVGIcon/DownArrow";
+import MoviesCard from "@/Components/SharedFile/MoviesCard/MoviesCard";
 
 interface MovieData {
   name: string;

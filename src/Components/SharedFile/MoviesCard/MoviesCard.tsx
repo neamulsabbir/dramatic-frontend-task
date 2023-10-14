@@ -1,8 +1,9 @@
 import Image from "next/image";
 import styled from "styled-components";
-import imdb from "../../../../assets/imdb.png";
-import love from "../../../../assets/love.png";
-import EyeIcon from "../../SVGIcon/EyeIcon";
+import Link from "next/link";
+import EyeIcon from "../SVGIcon/EyeIcon";
+import imdb from '../../../assets/imdb.png'
+import love from '../../../assets/love.png'
 
 interface MovieCardProps {
   cards: {
@@ -16,21 +17,23 @@ interface MovieCardProps {
 const MoviesCard = ({ cards }: MovieCardProps) => {
   return (
     <div>
-      <PosterImg src={cards?.img} alt="movie poster" />
-      <MovieTitle>{cards?.name}</MovieTitle>
-      <ReleaseDate>{cards?.date}</ReleaseDate>
-      <StatisticsContainer>
-        <LeftStatistics>
-          <Image src={imdb} alt="imdb" width={20} height={14} />
-          <RatingsText>{cards?.ratings}</RatingsText>
-        </LeftStatistics>
-        <RightStatistics>
-          <EyeIcon />
-          <LoveButton>
-            <Image src={love} alt="love" />
-          </LoveButton>
-        </RightStatistics>
-      </StatisticsContainer>
+      <Link href="/">
+        <PosterImg src={cards?.img} alt="movie poster" />
+        <MovieTitle>{cards?.name}</MovieTitle>
+        <ReleaseDate>{cards?.date}</ReleaseDate>
+        <StatisticsContainer>
+          <LeftStatistics>
+            <Image src={imdb} alt="imdb" width={20} height={14} />
+            <RatingsText>{cards?.ratings}</RatingsText>
+          </LeftStatistics>
+          <RightStatistics>
+            <EyeIcon />
+            <LoveButton>
+              <Image src={love} alt="love" />
+            </LoveButton>
+          </RightStatistics>
+        </StatisticsContainer>
+      </Link>
     </div>
   );
 };
@@ -39,8 +42,8 @@ export default MoviesCard;
 
 const PosterImg = styled(Image)`
   border-radius: 7px;
-box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.36);
-`
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.36);
+`;
 
 const MovieTitle = styled.h2`
   color: #fff;
