@@ -11,7 +11,8 @@ const ComingSoon = () => {
 export default ComingSoon;
 
 const MainDiv = styled.div`
-  height: calc(100vh - 30px);
+color: white;
+  height: 100vh ;
   display: flex;
   flex-direction: column;
   align-items: center;

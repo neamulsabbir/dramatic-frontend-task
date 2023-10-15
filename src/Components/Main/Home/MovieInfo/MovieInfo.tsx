@@ -1,12 +1,10 @@
 import Image from "next/image";
-import tamasha from "../../../../assets/image1.png";
-import imdb from '../../../../assets/imdb.png'
-import vector from '../../../../assets/vector.png'
-import plus from '../../../../assets/plus.png'
 import styled from "styled-components";
 import SideMenu from "@/Components/SharedFile/SideMenu/SideMenu";
-import DramaType from "@/Components/SharedFile/DramaType/DramaType";
-import MovieDetails from "@/Components/SharedFile/MovieDetails/MovieDetails";
+import tamasha from "../../../../assets/image1.png";
+import imdb from "../../../../assets/imdb.png";
+import vector from "../../../../assets/vector.png";
+import plus from "../../../../assets/plus.png";
 
 const MovieInfo = () => {
   return (
@@ -16,12 +14,17 @@ const MovieInfo = () => {
         <ImageDiv>
           <Image src={tamasha} alt="" />
         </ImageDiv>
-        <MovieDetails>
+        <DetailP>
           Ved and Tara fall in love while on a holiday in Corsica and decide to
           keep their real identities undisclosed. Tara returns to Delhi and
           meets a new Ved, who is trying to discover his true self.
-        </MovieDetails>
-        <DramaType>Romance, Drama</DramaType>
+        </DetailP>
+        <Genres>
+          <span className="highlight">
+            GENRES <br />
+          </span>
+          Romance, Drama
+        </Genres>
         <Buttons>
           <Watch>
             <BtnTxt>WATCH</BtnTxt>
@@ -33,7 +36,7 @@ const MovieInfo = () => {
           </List>
         </Buttons>
         <Imdb>
-          <Image src={imdb} alt="" width={54} height={27}/>
+          <Image src={imdb} alt="" width={54} height={27} />
           <Ratings>7.3</Ratings>
           <Ua4K>U/A</Ua4K>
           <Ua4K>4K</Ua4K>
@@ -105,4 +108,24 @@ const H5 = styled.h5`
   font-size: 20px;
   font-weight: 700;
   margin-left: 17px;
+`;
+const DetailP = styled.p`
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  width: 560px;
+  font-style: normal;
+  margin-top: 32px;
+`;
+const Genres = styled.p`
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 18px;
+
+  .highlight {
+    color: #ff2e00;
+    font-size: 18px;
+    font-weight: 600;
+  }
 `;

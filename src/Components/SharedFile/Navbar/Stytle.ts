@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const StickyNavbar = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 100; 
+`;
 export const DesktopNavbarContainer = styled.header`
   display: flex;
   justify-content: space-between;
@@ -11,7 +16,6 @@ export const DesktopNavbarContainer = styled.header`
   );
   padding-left: 26px;
   padding-right: 32px;
-  
 `;
 export const LeftSide = styled.div`
   display: flex;
@@ -34,6 +38,7 @@ export const Input = styled.input`
     color: #cda2a2;
     font-size: 16px;
     font-weight: 700;
+    padding: 0;
   }
   @media screen and (max-width: 1200px) {
     margin-left: 50px;
@@ -57,12 +62,12 @@ export const CustomP = styled.p`
   font-weight: 700;
 `;
 export const NewP = styled.p`
-margin: 0px;
+  margin: 0px;
   color: #fff;
   font-size: 16px;
   font-weight: 700;
-margin-right: 30px;
-`
+  margin-right: 30px;
+`;
 export const ProfileImg = styled.div`
   padding: 17px 0px;
   display: flex;

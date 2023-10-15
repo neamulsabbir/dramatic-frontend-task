@@ -1,8 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Providers } from "@/redux/providers/providers";
+import StyledComponentsRegistry from "./Pages/Styled-components/registry";
 import Footer from "@/Components/SharedFile/Footer/Footer";
-import StyledComponentsRegistry from "./Styled-components/registry";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <StyledComponentsRegistry>
-          {children}
+          <Providers>{children}</Providers>
           <Footer />
         </StyledComponentsRegistry>
       </body>

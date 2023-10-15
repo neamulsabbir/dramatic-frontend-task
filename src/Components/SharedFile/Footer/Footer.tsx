@@ -51,24 +51,13 @@ const Footer = () => {
 export default Footer;
 
 const FooterContainer = styled.div`
-  padding: 95px 239px 41px 81px;
+  padding: 95px 0px 41px 0px;
   background-color: #161214;
-width: 100%;
+  /* width: 100%; */
 `;
 const FooterSection = styled.div`
   display: flex;
-  & > *:first-child {
-    margin-right: 87px;
-  }
-  & > *:nth-child(2) {
-    margin-right: 99px;
-  }
-  & > *:nth-child(3) {
-    margin-right: 110px;
-  }
-  & > *:nth-child(4) {
-    margin-right: 139px;
-  }
+  justify-content: space-around
 `;
 const LanguageSection = styled.div`
   display: inline-block;

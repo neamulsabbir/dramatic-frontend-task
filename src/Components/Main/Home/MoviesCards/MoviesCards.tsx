@@ -1,60 +1,11 @@
 "use client";
+import React, { useEffect } from "react";
 import styled from "styled-components";
-import poster from "../../../../assets/poster.jpg";
 import DownArrow from "@/Components/SharedFile/SVGIcon/DownArrow";
 import MoviesCard from "@/Components/SharedFile/MoviesCard/MoviesCard";
-
-interface MovieData {
-  name: string;
-  img: any;
-  date: number;
-  ratings: number;
-}
-
-const datas: MovieData[] = [
-  {
-    name: "Kumbalangi Nights",
-    img: poster,
-    date: 2019,
-    ratings: 8.6,
-  },
-  {
-    name: "Kumbalangi Nights",
-    img: poster,
-    date: 2019,
-    ratings: 8.6,
-  },
-  {
-    name: "Kumbalangi Nights",
-    img: poster,
-    date: 2019,
-    ratings: 8.6,
-  },
-  {
-    name: "Kumbalangi Nights",
-    img: poster,
-    date: 2019,
-    ratings: 8.6,
-  },
-  {
-    name: "Kumbalangi Nights",
-    img: poster,
-    date: 2019,
-    ratings: 8.6,
-  },
-  {
-    name: "Kumbalangi Nights",
-    img: poster,
-    date: 2019,
-    ratings: 8.6,
-  },
-  {
-    name: "Kumbalangi Nights",
-    img: poster,
-    date: 2019,
-    ratings: 8.6,
-  },
-];
+import { useDispatch, useSelector } from "react-redux";
+import { getMovies } from "@/redux/features/BollywoodMovies/moviesSlice";
+import MovieList from "../MovieList/MovieList";
 
 const MoviesCards = () => {
   return (
@@ -68,11 +19,7 @@ const MoviesCards = () => {
           </div>
         </FilterBtn>
       </MovieSuggest>
-      <CardsGrid>
-        {datas.map((data, i) => (
-          <MoviesCard key={i} cards={data} />
-        ))}
-      </CardsGrid>
+      <MovieList />
     </MoviesCardContainer>
   );
 };

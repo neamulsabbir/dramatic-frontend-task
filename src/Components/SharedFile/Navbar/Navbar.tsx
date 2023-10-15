@@ -5,11 +5,11 @@ import Profile from "../../../assets/profile.png";
 import GiftIcon from "../SVGIcon/GiftIcon";
 import BellIcon from "../SVGIcon/BellIcon";
 import Link from "next/link";
-import { Active, CustomP, Input, DesktopNavbarContainer, ProfileImg,NewP } from "./Stytle";
+import {StickyNavbar, Active, CustomP, Input, DesktopNavbarContainer, ProfileImg,NewP } from "./Stytle";
 
 const Navbar = () => {
   return (
-    <div>
+    <StickyNavbar>
       <DesktopNavbarContainer>
         <Link href="/">
           <Image src={logo} alt="logo" />
@@ -26,7 +26,7 @@ const Navbar = () => {
           <Active></Active>
         </ProfileImg>
       </DesktopNavbarContainer>
-    </div>
+    </StickyNavbar>
   );
 };
 
