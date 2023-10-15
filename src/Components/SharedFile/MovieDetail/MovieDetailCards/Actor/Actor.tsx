@@ -11,12 +11,29 @@ interface ActorsProps {
 
 const Actor = ({ actors }: ActorsProps) => {
   return (
-    <div>
+    <Cards>
       <Image src={actors?.img} alt="" />
-      <h4>{actors?.name}</h4>
-      <p>{actors?.position}</p>
-    </div>
+      <Name>{actors?.name}</Name>
+      <Position>{actors?.position}</Position>
+    </Cards>
   );
 };
 
 export default Actor;
+
+const Cards = styled.div`
+  width: 132px;
+`;
+const Name = styled.h4`
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 8px;
+`;
+const Position = styled.p`
+  color: #a9a9a9;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 2px;
+`;

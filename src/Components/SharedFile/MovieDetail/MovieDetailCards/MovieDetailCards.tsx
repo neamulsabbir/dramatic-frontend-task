@@ -8,6 +8,7 @@ import Image from "next/image";
 import Actor from "./Actor/Actor";
 import styled from "styled-components";
 import PlayIcon from "../../SVGIcon/PlayIcon";
+import ShowMoreBtn from "../../ShowMoreBtn/ShowMoreBtn";
 
 interface Actress {
   name: string;
@@ -56,13 +57,18 @@ const MovieDetailCards = () => {
       </div>
       <Actress>
         <div>
-          <Title>CAST AND CREW INFO</Title>
+          <div>
+            <Title>CAST AND CREW INFO</Title>
+          </div>
+          <ActorsCard>
+            {actress.map((actor, i) => (
+              <Actor key={i} actors={actor} />
+            ))}
+          </ActorsCard>
         </div>
-        <ActorsCard>
-          {actress.map((actor, i) => (
-            <Actor key={i} actors={actor} />
-          ))}
-        </ActorsCard>
+        <Button>
+          <ShowMoreBtn />
+        </Button>
       </Actress>
     </CardsContainer>
   );
@@ -112,9 +118,18 @@ const TrailerPoster = styled(Image)`
 `;
 const Actress = styled.div`
   margin-left: 104px;
+  display: flex;
+  flex-direction: column;
 `;
 const ActorsCard = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 71px;
+`;
+const Button = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -73px;
+  margin-top: 64px;
 `;

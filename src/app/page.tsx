@@ -8,6 +8,7 @@ import Bollywood from "@/Components/Main/Home/Bollywood/Bollywood";
 import styled from "styled-components";
 import DownArrow from "@/Components/SharedFile/SVGIcon/DownArrow";
 import Link from "next/link";
+import ShowMoreBtn from "@/Components/SharedFile/ShowMoreBtn/ShowMoreBtn";
 
 export default function Home() {
   return (
@@ -20,10 +21,7 @@ export default function Home() {
         <Bollywood />
       </main>
       <ButtonSection>
-        <Button href='/movies'>
-          <ButtonP>Show More</ButtonP>
-          <DownArrow />
-        </Button>
+        <ShowMoreBtn />
       </ButtonSection>
     </div>
   );
@@ -35,18 +33,4 @@ const ButtonSection = styled.div`
   align-items: center;
   margin-top: 60px;
   margin-bottom: 46px;
-`;
-const Button = styled(Link)`
-  display: flex;
-  align-items: center;
-  border-radius: 21.5px;
-  background: #5e47a1;
-  padding: 11px 18.22px 11px 26px;
-`;
-
-const ButtonP = styled.p`
-  color: #e3e3e3;
-  font-size: 18px;
-  font-weight: 700;
-  margin-right: 11px;
 `;
