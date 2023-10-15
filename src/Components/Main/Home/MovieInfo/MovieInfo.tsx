@@ -80,6 +80,7 @@ const List = styled.div`
   background: #5c5c5c;
 `;
 const BtnTxt = styled.p`
+  font-family: Montserrat;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
@@ -93,9 +94,11 @@ const Ratings = styled.h5`
   font-size: 20px;
   font-weight: 700;
   margin-left: 7.3px;
+  font-family: Montserrat;
 `;
 const Ua4K = styled.h5`
   color: #fff;
+  font-family: Montserrat;
   font-size: 18px;
   font-weight: 500;
   border-radius: 5px;
@@ -108,8 +111,10 @@ const H5 = styled.h5`
   font-size: 20px;
   font-weight: 700;
   margin-left: 17px;
+  font-family: Montserrat;
 `;
 const DetailP = styled.p`
+  font-family: Montserrat;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -118,14 +123,17 @@ const DetailP = styled.p`
   margin-top: 32px;
 `;
 const Genres = styled.p`
+  font-family: Montserrat;
   color: #ffffff;
   font-size: 18px;
   font-weight: 600;
   margin-top: 18px;
+  font-family: Montserrat;
 
   .highlight {
     color: #ff2e00;
     font-size: 18px;
     font-weight: 600;
+    font-family: Montserrat;
   }
 `;

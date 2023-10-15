@@ -90,6 +90,7 @@ const CardsContainer = styled.div`
 const Title = styled.p`
   color: #fff;
   font-size: 18px;
+  font-family: Montserrat;
   font-weight: 700;
   margin-bottom: 10px;
 `;

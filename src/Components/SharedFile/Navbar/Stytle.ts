@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StickyNavbar = styled.div`
   position: sticky;
   top: 0;
-  z-index: 100; 
+  z-index: 100;
 `;
 export const DesktopNavbarContainer = styled.header`
   display: flex;
@@ -31,12 +31,13 @@ export const Input = styled.input`
   border-radius: 18.5px;
   background: #3b567d;
   width: 324px;
-  padding: 8px 19px;
+  padding: 10px 19px;
   border: none;
   margin-left: 107px;
   &::placeholder {
     color: #cda2a2;
     font-size: 16px;
+    font-family: Montserrat;
     font-weight: 700;
     padding: 0;
   }
@@ -59,12 +60,14 @@ export const CustomP = styled.p`
   margin: 0px;
   color: #fff;
   font-size: 16px;
+  font-family: Montserrat;
   font-weight: 700;
 `;
 export const NewP = styled.p`
   margin: 0px;
   color: #fff;
   font-size: 16px;
+  font-family: Montserrat;
   font-weight: 700;
   margin-right: 30px;
 `;

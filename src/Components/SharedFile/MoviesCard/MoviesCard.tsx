@@ -69,6 +69,7 @@ const PosterImg = styled(Image)`
 const MovieTitle = styled.h2`
   color: #fff;
   font-size: 16px;
+  font-family: Montserrat;
   font-weight: 700;
   margin-top: 10px;
   white-space: nowrap;
@@ -79,6 +80,7 @@ const MovieTitle = styled.h2`
 const ReleaseDate = styled.p`
   color: #afafaf;
   font-size: 11px;
+  font-family: Montserrat;
   font-weight: 700;
   margin-top: 4px;
   margin-bottom: 5px;
@@ -86,6 +88,7 @@ const ReleaseDate = styled.p`
 const RatingsText = styled.p`
   color: #ffc907;
   font-size: 11px;
+  font-family: Montserrat;
   font-weight: 700;
   margin-left: 5px;
 `;

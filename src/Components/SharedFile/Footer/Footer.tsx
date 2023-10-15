@@ -57,7 +57,7 @@ const FooterContainer = styled.div`
 `;
 const FooterSection = styled.div`
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
 `;
 const LanguageSection = styled.div`
   display: inline-block;
@@ -69,6 +69,7 @@ const LanguageArea = styled.div`
   padding: 8px 13px 8px 15px;
 `;
 const Language = styled.p`
+  font-family: Montserrat;
   color: #fff;
   font-size: 14px;
   font-weight: 400;
@@ -94,4 +95,5 @@ const CopyTxt = styled.p`
   color: #fff;
   font-size: 14px;
   font-weight: 400;
+  font-family: Montserrat;
 `;

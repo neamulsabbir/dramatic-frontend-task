@@ -24,6 +24,7 @@ const Button = styled(Link)`
 const ButtonP = styled.p`
   color: #e3e3e3;
   font-size: 18px;
+  font-family: Montserrat;
   font-weight: 700;
   margin-right: 11px;
 `;

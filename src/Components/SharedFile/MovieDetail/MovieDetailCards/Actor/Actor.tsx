@@ -27,6 +27,7 @@ const Cards = styled.div`
 const Name = styled.h4`
   color: #fff;
   font-size: 14px;
+  font-family: Montserrat;
   font-weight: 700;
   margin-top: 8px;
 `;

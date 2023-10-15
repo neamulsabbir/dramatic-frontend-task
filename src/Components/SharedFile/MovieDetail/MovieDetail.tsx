@@ -7,6 +7,7 @@ import vector from "../../../assets/vector.png";
 import plus from "../../../assets/plus.png";
 import imdb from "../../../assets/imdb.png";
 import MovieDetailCards from "./MovieDetailCards/MovieDetailCards";
+import MoreCard from "../MoreCard/MoreCard";
 
 const MovieDetail = () => {
   return (
@@ -61,6 +62,7 @@ const MovieDetail = () => {
         </Details>
       </MovieInfoContainer>
       <MovieDetailCards />
+      <MoreCard />
     </DetailsContainer>
   );
 };
@@ -114,6 +116,7 @@ const BtnTxt = styled.p`
   color: #fff;
   font-size: 20px;
   font-weight: 600;
+  font-family: Montserrat;
 `;
 const Imdb = styled.div`
   display: flex;
@@ -124,6 +127,7 @@ const Ratings = styled.h5`
   font-size: 20px;
   font-weight: 700;
   margin-left: 7.3px;
+  font-family: Montserrat;
 `;
 const Ua4K = styled.h5`
   color: #fff;
@@ -133,6 +137,7 @@ const Ua4K = styled.h5`
   border: 1px solid #fff;
   padding: 2px 5px;
   margin-left: 13px;
+  font-family: Montserrat;
 `;
 const H5 = styled.h5`
   color: #959595;
@@ -143,6 +148,7 @@ const H5 = styled.h5`
 const DetailP = styled.p`
   color: #fff;
   font-size: 14px;
+  font-family: Montserrat;
   font-weight: 600;
   width: 520px;
   font-style: normal;
@@ -151,6 +157,7 @@ const DetailP = styled.p`
 const Genres = styled.p`
   color: #ffffff;
   font-size: 18px;
+  font-family: Montserrat;
   font-weight: 600;
   margin-top: 36px;
 
@@ -158,11 +165,13 @@ const Genres = styled.p`
     color: #ff2e00;
     font-size: 18px;
     font-weight: 600;
+    font-family: Montserrat;
   }
 `;
 const Audio = styled.p`
   color: #ffffff;
   font-size: 18px;
+  font-family: Montserrat;
   font-weight: 600;
   margin-top: 26px;
 
@@ -170,17 +179,20 @@ const Audio = styled.p`
     color: #ff2e00;
     font-size: 18px;
     font-weight: 600;
+    font-family: Montserrat;
   }
 `;
 const Subtitles = styled.p`
   color: #ffffff;
   font-size: 18px;
+  font-family: Montserrat;
   font-weight: 600;
   margin-top: 26px;
 
   .highlight {
     color: #ff2e00;
     font-size: 18px;
+    font-family: Montserrat;
     font-weight: 600;
   }
 `;

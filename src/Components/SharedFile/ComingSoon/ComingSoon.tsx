@@ -11,8 +11,9 @@ const ComingSoon = () => {
 export default ComingSoon;
 
 const MainDiv = styled.div`
-color: white;
-  height: 100vh ;
+  color: white;
+  font-family: Montserrat;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

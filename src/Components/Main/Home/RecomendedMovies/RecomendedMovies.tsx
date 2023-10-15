@@ -30,6 +30,7 @@ const Title = styled.h2`
   color: #fff;
   font-size: 18px;
   font-weight: 700;
+  font-family: Montserrat;
 `;
 const BtnSection = styled.div`
   display: flex;
@@ -45,6 +46,7 @@ const Button = styled.div`
   margin-right: 26px;
   margin-top: 19px;
   margin-bottom: 22px;
+  font-family: Montserrat;
 `;
 const CardsGrid = styled.div`
   display: grid;

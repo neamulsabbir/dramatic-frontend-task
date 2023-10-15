@@ -53,12 +53,14 @@ const SectionTitle = styled.h3`
   color: #fff;
   font-size: 18px;
   font-weight: 700;
+  font-family: Montserrat;
 `;
 const FilterTxt = styled.div`
   color: #fff;
   font-size: 16px;
   font-weight: 600;
   margin-right: 12px;
+  font-family: Montserrat;
 `;
 const CardsGrid = styled.div`
   display: grid;
