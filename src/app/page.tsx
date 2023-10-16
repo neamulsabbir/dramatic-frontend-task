@@ -9,7 +9,6 @@ import styled from "styled-components";
 import DownArrow from "@/Components/SharedFile/SVGIcon/DownArrow";
 import Link from "next/link";
 import ShowMoreBtn from "@/Components/SharedFile/ShowMoreBtn/ShowMoreBtn";
-import Loader from "@/Components/SharedFile/Loader/Loader";
 
 export default function Home() {
   return (
@@ -24,7 +23,6 @@ export default function Home() {
       <ButtonSection>
         <ShowMoreBtn />
       </ButtonSection>
-      <Loader></Loader>
     </div>
   );
 }
