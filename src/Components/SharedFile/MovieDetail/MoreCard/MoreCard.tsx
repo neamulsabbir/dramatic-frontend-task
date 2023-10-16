@@ -26,6 +26,9 @@ const Container = styled.div`
   margin-bottom: 68px;
   margin-left: 148px;
   margin-right: 53px;
+  @media screen and (max-width: 1280px) {
+    margin: 20px 148px;   
+  }
   @media screen and (max-width: 1023px) {
     margin: 0 38px;   
   }

@@ -12,57 +12,59 @@ import MoreCard from "./MoreCard/MoreCard";
 
 const MovieDetail = () => {
   return (
-    <div className={custom.main}>
-      <Navbar />
-      <MovieInfoContainer>
-        <SideMenu />
-        <Details>
-          <ImageDiv>
-            <Piku src={piku} alt="" />
-          </ImageDiv>
-          <DetailP>
-            A road trip to Kolkata brings Piku, an architect, closer to her
-            ageing but nagging father Bhaskor Banerjee despite their disparate
-            ideologies and fights over trivial issues.
-          </DetailP>
-          <Genres>
-            <span className="highlight">
-              GENRES <br />
-            </span>
-            Comedy, Drama
-          </Genres>
-          <Buttons>
-            <Watch>
-              <BtnTxt>WATCH</BtnTxt>
-              <Icon src={vector} alt="" />
-            </Watch>
-            <List>
-              <BtnTxt>MY LIST</BtnTxt>
-              <Icon src={plus} alt="" />
-            </List>
-          </Buttons>
-          <Imdb>
-            <Image src={imdb} alt="" width={54} height={27} />
-            <Ratings>7.3</Ratings>
-            <Ua4K>U/A</Ua4K>
-            <Ua4K>4K</Ua4K>
-            <H5>2015</H5>
-          </Imdb>
-          <Audio>
-            <span className="highlight">
-              AUDIO <br />
-            </span>
-            English - Audio Description,English [Original]
-          </Audio>
-          <Subtitles>
-            <span className="highlight">
-              SUBTITLES <br />
-            </span>
-            English, Hindi
-          </Subtitles>
-        </Details>
-      </MovieInfoContainer>
-      <MovieDetailCards />
+    <div>
+      <div className={custom.main}>
+        <Navbar />
+        <MovieInfoContainer>
+          <SideMenu />
+          <Details>
+            <ImageDiv>
+              <Piku src={piku} alt="" />
+            </ImageDiv>
+            <DetailP>
+              A road trip to Kolkata brings Piku, an architect, closer to her
+              ageing but nagging father Bhaskor Banerjee despite their disparate
+              ideologies and fights over trivial issues.
+            </DetailP>
+            <Genres>
+              <span className="highlight">
+                GENRES <br />
+              </span>
+              Comedy, Drama
+            </Genres>
+            <Buttons>
+              <Watch>
+                <BtnTxt>WATCH</BtnTxt>
+                <Icon src={vector} alt="" />
+              </Watch>
+              <List>
+                <BtnTxt>MY LIST</BtnTxt>
+                <Icon src={plus} alt="" />
+              </List>
+            </Buttons>
+            <Imdb>
+              <Image src={imdb} alt="" width={54} height={27} />
+              <Ratings>7.3</Ratings>
+              <Ua4K>U/A</Ua4K>
+              <Ua4K>4K</Ua4K>
+              <H5>2015</H5>
+            </Imdb>
+            <Audio>
+              <span className="highlight">
+                AUDIO <br />
+              </span>
+              English - Audio Description,English [Original]
+            </Audio>
+            <Subtitles>
+              <span className="highlight">
+                SUBTITLES <br />
+              </span>
+              English, Hindi
+            </Subtitles>
+          </Details>
+        </MovieInfoContainer>
+        <MovieDetailCards />
+      </div>
       <MoreCard />
     </div>
   );
@@ -74,12 +76,12 @@ const MovieInfoContainer = styled.div`
   display: flex;
 `;
 const Details = styled.div`
-   margin-left: 62px;
+  margin-left: 62px;
   @media screen and (max-width: 1023px) {
-    margin: 0 38px;   
+    margin: 0 38px;
   }
   @media screen and (max-width: 650px) {
-    margin: 0 20px; 
+    margin: 0 20px;
   }
 `;
 const ImageDiv = styled.div`
@@ -92,8 +94,7 @@ const Piku = styled(Image)`
   @media screen and (max-width: 500px) {
     width: 280px;
   }
-  
-`
+`;
 const Buttons = styled.div`
   display: flex;
   align-items: center;
@@ -122,11 +123,11 @@ const List = styled.div`
   }
 `;
 const Icon = styled(Image)`
- @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) {
     width: 10px;
     height: 10px;
   }
-`
+`;
 const BtnTxt = styled.p`
   font-family: Montserrat;
   color: #fff;

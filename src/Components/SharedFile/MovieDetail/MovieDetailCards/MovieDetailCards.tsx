@@ -82,9 +82,6 @@ const CardsContainer = styled.div`
   margin-right: 10px;
   padding: 20px 26px 56px 31px;
   margin-left: 122px;
-  @media screen and (max-width: 650px) {
-    margin: 0 20px;
-  }
   @media screen and (max-width: 1399px) {
     display: flex;
     flex-direction: column;
@@ -97,9 +94,15 @@ const CardsContainer = styled.div`
     box-shadow: none;
     backdrop-filter: none;
   }
-  @media screen and (max-width: 620) {
+  @media screen and (max-width: 1023px) {
     margin-left: 20px;
+    padding: 0px;
+    border-radius: 0px;
+    background: none;
+    box-shadow: none;
+    backdrop-filter: none;
   }
+  
 `;
 const Title = styled.p`
   color: #fff;
