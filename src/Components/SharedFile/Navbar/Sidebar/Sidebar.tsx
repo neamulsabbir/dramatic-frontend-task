@@ -3,7 +3,6 @@ import custom from "../custom.module.css";
 import Link from "next/link";
 import styled from "styled-components";
 import { useState } from "react";
-import { RootState } from "@/redux/store";
 
 const Sidebar = () => {
   const [activeRoute, setActiveRoute] = useState("Home");
@@ -11,7 +10,7 @@ const Sidebar = () => {
     setActiveRoute(route);
   };
 
-  const isOpen = useSelector((state: RootState) => state.sidebar.isOpen);
+  const isOpen = useSelector((state: any) => state.sidebar.isOpen);
 
   const sidebarClasses = `${custom.sidebar} ${
     isOpen ? custom.open : custom.close
