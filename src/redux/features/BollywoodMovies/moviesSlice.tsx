@@ -25,7 +25,7 @@ const initialState: MoviesState = {
   movies: [],
 };
 
-export const getMovies = createAsyncThunk("movies/getMovies", async () => {
+export const getMovies:any = createAsyncThunk("movies/getMovies", async () => {
   const response = await axios.get(
     "https://api.themoviedb.org/3/search/movie?api_key=b33d5a94a56607b1d2197f346b4ca1a7&query=bollywood"
   );
