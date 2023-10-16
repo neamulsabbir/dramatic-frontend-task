@@ -25,7 +25,6 @@ interface MovieCardProps {
 }
 
 const MoviesCard = ({ cards }: MovieCardProps) => {
-  // console.log(cards);
   return (
     <CardSection>
       <CardLink href={`/movie-details/${cards?.id}`}>

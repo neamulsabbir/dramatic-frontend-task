@@ -17,7 +17,7 @@ export default function Home() {
         <Navbar />
         <MovieInfo />
         <MoviesCards />
-        <RecomendedMovies />
+        {/* <RecomendedMovies /> */}
         <Bollywood />
       </main>
       <ButtonSection>

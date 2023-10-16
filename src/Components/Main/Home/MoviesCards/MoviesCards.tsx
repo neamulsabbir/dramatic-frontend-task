@@ -34,11 +34,29 @@ const MoviesCardContainer = styled.div`
   box-shadow: 8px -8px 10px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(12.5px);
   padding: 12px 0 29px 23px;
+  @media screen and (max-width: 1023px) {
+    margin-left: 38px;
+    backdrop-filter: none;
+    border-radius: 0px;
+    background: none;
+    padding: 0px;
+  }
+  @media screen and (max-width: 650px) {
+    backdrop-filter: none;
+    border-radius: 0px;
+    background: none;
+    padding: 0px;
+    margin: 20px 0px 20px 20px;
+  }
 `;
 const MovieSuggest = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 const FilterBtn = styled.div`
   margin-bottom: 17px;
@@ -48,12 +66,23 @@ const FilterBtn = styled.div`
   display: flex;
   align-items: center;
   padding: 10px 20px 11px 26px;
+  @media screen and (max-width: 950px) {
+    padding: 5px 20px;
+  }
+  @media screen and (max-width: 650px) {
+    display: none;
+  }
 `;
 const SectionTitle = styled.h3`
   color: #fff;
   font-size: 18px;
   font-weight: 700;
   font-family: Montserrat;
+  @media screen and (max-width: 650px) {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
 `;
 const FilterTxt = styled.div`
   color: #fff;

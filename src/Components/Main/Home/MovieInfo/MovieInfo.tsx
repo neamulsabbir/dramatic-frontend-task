@@ -12,7 +12,7 @@ const MovieInfo = () => {
       <SideMenu />
       <Details>
         <ImageDiv>
-          <Image src={tamasha} alt="" />
+          <TamashaImage src={tamasha} alt="" />
         </ImageDiv>
         <DetailP>
           Ved and Tara fall in love while on a holiday in Corsica and decide to
@@ -28,11 +28,11 @@ const MovieInfo = () => {
         <Buttons>
           <Watch>
             <BtnTxt>WATCH</BtnTxt>
-            <Image style={{ marginLeft: "20px" }} src={vector} alt="" />
+            <Icon src={vector} alt="" />
           </Watch>
           <List>
             <BtnTxt>MY LIST</BtnTxt>
-            <Image style={{ marginLeft: "20px" }} src={plus} alt="" />
+            <Icon src={plus} alt="" />
           </List>
         </Buttons>
         <Imdb>
@@ -54,10 +54,23 @@ const MovieInfoContainer = styled.div`
 `;
 const Details = styled.div`
   margin-left: 38px;
+  @media screen and (max-width: 650px) {
+    margin: 0 20px;
+    
+  }
 `;
 const ImageDiv = styled.div`
   padding-top: 45px;
-`;
+  @media screen and (max-width: 1023px) {
+    padding-top: 0px;
+  }
+  `;
+const TamashaImage = styled(Image)`
+  @media screen and (max-width: 500px) {
+    width: 280px;
+  }
+  
+`
 const Buttons = styled.div`
   display: flex;
   align-items: center;
@@ -70,6 +83,9 @@ const Watch = styled.div`
   border-radius: 30px;
   background: #5436a9;
   padding: 13px 25px;
+  @media screen and (max-width: 1023px) {
+    padding: 7px 17px;
+  }
 `;
 const List = styled.div`
   display: flex;
@@ -78,16 +94,33 @@ const List = styled.div`
   padding: 13px 25px;
   border-radius: 30px;
   background: #5c5c5c;
+  @media screen and (max-width: 1023px) {
+    padding: 7px 17px;
+  }
 `;
+const Icon = styled(Image)`
+ @media screen and (max-width: 1023px) {
+    width: 10px;
+    height: 10px;
+  }
+`
 const BtnTxt = styled.p`
   font-family: Montserrat;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
+  margin-right: 20px;
+  @media screen and (max-width: 1023px) {
+    font-size: 12px;
+    margin-right: 7px;
+  }
 `;
 const Imdb = styled.div`
   display: flex;
   align-items: center;
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
 `;
 const Ratings = styled.h5`
   color: #ffc907;
@@ -121,6 +154,9 @@ const DetailP = styled.p`
   width: 560px;
   font-style: normal;
   margin-top: 32px;
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
 `;
 const Genres = styled.p`
   font-family: Montserrat;

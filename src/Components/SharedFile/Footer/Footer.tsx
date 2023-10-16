@@ -51,13 +51,20 @@ const Footer = () => {
 export default Footer;
 
 const FooterContainer = styled.div`
-  padding: 95px 0px 41px 0px;
+  padding: 95px 81px 41px 81px;
   background-color: #161214;
-  /* width: 100%; */
 `;
 const FooterSection = styled.div`
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 10px;
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /* justify-content: space-around; */
 `;
 const LanguageSection = styled.div`
   display: inline-block;
@@ -78,12 +85,17 @@ const Language = styled.p`
 const FooterTitle = styled.h3`
   color: #fff;
   font-size: 16px;
+  font-family: Roboto;
   font-weight: 700;
   margin-bottom: 13px;
+  @media screen and (max-width: 1023px) {
+    margin-top: 20px;
+  }
 `;
 const FooterLinks = styled(Link)`
   color: #fff;
   font-size: 14px;
+  font-family: Roboto;
   font-weight: 400;
   margin-top: 10px;
   text-decoration: none;
@@ -94,6 +106,8 @@ const CopyTxt = styled.p`
   text-align: center;
   color: #fff;
   font-size: 14px;
+  font-family: Roboto;
   font-weight: 400;
-  font-family: Montserrat;
+  font-family: Roboto;
+  /* display: flex; */
 `;

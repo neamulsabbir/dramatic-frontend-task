@@ -29,4 +29,5 @@ const CardsGrid = styled.div`
   grid-template-columns: repeat(7, 1fr);
   column-gap: 42px;
   overflow-x: hidden;
+  
 `;

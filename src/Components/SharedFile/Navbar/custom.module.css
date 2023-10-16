@@ -1,0 +1,35 @@
+.active {
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+background: #38BBD8;
+margin-bottom: -10px;
+}
+.txt{
+  color: red;
+}
+.sidebar{
+  position: absolute;
+  background: linear-gradient(
+    91deg,
+    rgb(0, 0, 0) 0.45%,
+    rgb(103, 80, 165) 105.51%
+  );
+  z-index: 500;
+  padding: 20px 50px;
+  height: 100vh;
+  
+}
+.open{
+  right: 0;
+  top: 94px;
+}
+.close{
+  right: -300px;
+  top: 93px;
+  display: none;
+}
+.routeActive{
+  color: red;
+  border-bottom: 2px solid #38BBD8; ;
+}

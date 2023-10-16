@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled from "styled-components";
 
 export const StickyNavbar = styled.div`
@@ -16,6 +17,9 @@ export const DesktopNavbarContainer = styled.header`
   );
   padding-left: 26px;
   padding-right: 32px;
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 `;
 export const LeftSide = styled.div`
   display: flex;
@@ -33,22 +37,12 @@ export const Input = styled.input`
   width: 324px;
   padding: 10px 19px;
   border: none;
-  margin-left: 107px;
   &::placeholder {
     color: #cda2a2;
     font-size: 16px;
     font-family: Montserrat;
     font-weight: 700;
     padding: 0;
-  }
-  @media screen and (max-width: 1200px) {
-    margin-left: 50px;
-  }
-  @media screen and (max-width: 1080px) {
-    margin-left: 0px;
-  }
-  @media screen and (max-width: 1023px) {
-    display: none;
   }
 `;
 export const LeftCol = styled.div`
@@ -62,6 +56,7 @@ export const CustomP = styled.p`
   font-size: 16px;
   font-family: Montserrat;
   font-weight: 700;
+  text-decoration: none;
 `;
 export const NewP = styled.p`
   margin: 0px;
@@ -70,6 +65,29 @@ export const NewP = styled.p`
   font-family: Montserrat;
   font-weight: 700;
   margin-right: 30px;
+  text-decoration: none;
+  @media screen and (max-width: 1200px) {
+    /* margin-left: 0px; */
+    margin-right: 10px;
+  }
+`;
+export const InputSection = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 107px;
+  @media screen and (max-width: 1200px) {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  @media screen and (max-width: 1080px) {
+    margin-left: 0px;
+  }
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
+`;
+export const Icon = styled.div`
+  margin-left: -31px;
 `;
 export const ProfileImg = styled.div`
   padding: 17px 0px;
@@ -85,3 +103,45 @@ export const Active = styled.div`
   margin-top: -13px;
   margin-left: 42px;
 `;
+export const NavItems = styled(Link)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: red;
+
+  &[active="true"] {
+    color: white; 
+  }
+`;
+
+export const MobileNavbarContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    100deg,
+    rgb(0, 0, 0) 0.45%,
+    rgb(103, 80, 165) 105.51%
+  );
+  padding-left: 32px;
+  padding-right: 32px;
+  @media screen and (min-width: 1023px) {
+    display: none;
+  }
+`;
+export const MobRightSide = styled.div`
+  display: flex;
+  align-items: center;
+`;
+export const MobInputSection = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+`;
+export const Menu = styled.div`
+margin-left:10px ;
+`

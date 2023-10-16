@@ -19,6 +19,9 @@ const Button = styled(Link)`
   border-radius: 21.5px;
   background: #5e47a1;
   padding: 11px 18.22px 11px 26px;
+@media screen and (max-width: 650px) {
+  padding: 8px 25px;
+}
 `;
 
 const ButtonP = styled.p`
@@ -27,4 +30,7 @@ const ButtonP = styled.p`
   font-family: Montserrat;
   font-weight: 700;
   margin-right: 11px;
+  @media screen and (max-width: 650px) {
+    font-size: 12px;
+  }
 `;

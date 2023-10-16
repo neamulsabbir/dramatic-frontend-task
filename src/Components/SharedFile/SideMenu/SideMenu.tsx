@@ -28,6 +28,9 @@ export default SideMenu;
 const SideMenuContainer = styled.div`
   display: inline-block;
   margin-top: 32px;
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 `;
 const SideItems = styled.div`
   display: flex;
@@ -35,6 +38,9 @@ const SideItems = styled.div`
   border-radius: 0px 26px 26px 0px;
   background: linear-gradient(3deg, #130b29 9.89%, #5436a9 100%, #5e47a1 100%);
   padding: 0px 29px;
+  @media screen and (max-width: 1100px) {
+    padding: 0px 15px;
+  }
 `;
 const StyledUserIcon = styled.div`
   padding: 39px 0 35px 0;

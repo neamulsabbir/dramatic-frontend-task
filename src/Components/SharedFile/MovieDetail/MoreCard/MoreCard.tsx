@@ -1,8 +1,8 @@
 import Image from "next/image";
-import banner1 from "../../../assets/banner1.png";
-import banner2 from "../../../assets/banner2.png";
-import banner3 from "../../../assets/banner3.png";
-import banner4 from "../../../assets/banner4.png";
+import banner1 from "../../../../assets/banner1.png";
+import banner2 from "../../../../assets/banner2.png";
+import banner3 from "../../../../assets/banner3.png";
+import banner4 from "../../../../assets/banner4.png";
 import styled from "styled-components";
 
 const MoreCard = () => {
@@ -26,6 +26,12 @@ const Container = styled.div`
   margin-bottom: 68px;
   margin-left: 148px;
   margin-right: 53px;
+  @media screen and (max-width: 1023px) {
+    margin: 0 38px;   
+  }
+  @media screen and (max-width: 650px) {
+    margin: 0 20px; 
+  }
 `;
 const Title = styled.p`
   color: #fff;
@@ -33,12 +39,23 @@ const Title = styled.p`
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 13.68px;
+  @media screen and (max-width: 1430px) {
+    margin-top: 30px;
+  }
 `;
 const Banner = styled.div`
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 1430px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
 `;
 const BannerImg = styled(Image)`
   border-radius: 7px;
   box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.36);
+  @media screen and (max-width: 1430px) {
+    margin: 20px 0;
+  }
 `;

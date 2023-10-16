@@ -7,17 +7,18 @@ import vector from "../../../assets/vector.png";
 import plus from "../../../assets/plus.png";
 import imdb from "../../../assets/imdb.png";
 import MovieDetailCards from "./MovieDetailCards/MovieDetailCards";
-import MoreCard from "../MoreCard/MoreCard";
+import custom from "./custom.module.css";
+import MoreCard from "./MoreCard/MoreCard";
 
 const MovieDetail = () => {
   return (
-    <DetailsContainer>
+    <div className={custom.main}>
       <Navbar />
       <MovieInfoContainer>
         <SideMenu />
         <Details>
           <ImageDiv>
-            <Image src={piku} alt="" />
+            <Piku src={piku} alt="" />
           </ImageDiv>
           <DetailP>
             A road trip to Kolkata brings Piku, an architect, closer to her
@@ -33,11 +34,11 @@ const MovieDetail = () => {
           <Buttons>
             <Watch>
               <BtnTxt>WATCH</BtnTxt>
-              <Image style={{ marginLeft: "20px" }} src={vector} alt="" />
+              <Icon src={vector} alt="" />
             </Watch>
             <List>
               <BtnTxt>MY LIST</BtnTxt>
-              <Image style={{ marginLeft: "20px" }} src={plus} alt="" />
+              <Icon src={plus} alt="" />
             </List>
           </Buttons>
           <Imdb>
@@ -63,34 +64,36 @@ const MovieDetail = () => {
       </MovieInfoContainer>
       <MovieDetailCards />
       <MoreCard />
-    </DetailsContainer>
+    </div>
   );
 };
 
 export default MovieDetail;
 
-const DetailsContainer = styled.div`
-  background-image: linear-gradient(
-      90deg,
-      #000 17.76%,
-      rgba(0, 0, 0, 0.69) 41.44%,
-      rgba(196, 196, 196, 0) 100%
-    ),
-    url("../../../assets/dipika.png");
-  background-size: contain;
-  background-position: 175px 0%;
-  background-repeat: no-repeat;
-  width: 100%;
-`;
 const MovieInfoContainer = styled.div`
   display: flex;
 `;
 const Details = styled.div`
-  margin-left: 62px;
+   margin-left: 62px;
+  @media screen and (max-width: 1023px) {
+    margin: 0 38px;   
+  }
+  @media screen and (max-width: 650px) {
+    margin: 0 20px; 
+  }
 `;
 const ImageDiv = styled.div`
   padding-top: 75px;
+  @media screen and (max-width: 1023px) {
+    padding-top: 0px;
+  }
 `;
+const Piku = styled(Image)`
+  @media screen and (max-width: 500px) {
+    width: 280px;
+  }
+  
+`
 const Buttons = styled.div`
   display: flex;
   align-items: center;
@@ -103,6 +106,9 @@ const Watch = styled.div`
   border-radius: 30px;
   background: #5436a9;
   padding: 13px 25px;
+  @media screen and (max-width: 1023px) {
+    padding: 7px 17px;
+  }
 `;
 const List = styled.div`
   display: flex;
@@ -111,16 +117,33 @@ const List = styled.div`
   padding: 13px 25px;
   border-radius: 30px;
   background: #5c5c5c;
+  @media screen and (max-width: 1023px) {
+    padding: 7px 17px;
+  }
 `;
+const Icon = styled(Image)`
+ @media screen and (max-width: 1023px) {
+    width: 10px;
+    height: 10px;
+  }
+`
 const BtnTxt = styled.p`
+  font-family: Montserrat;
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  font-family: Montserrat;
+  margin-right: 20px;
+  @media screen and (max-width: 1023px) {
+    font-size: 12px;
+    margin-right: 7px;
+  }
 `;
 const Imdb = styled.div`
   display: flex;
   align-items: center;
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
 `;
 const Ratings = styled.h5`
   color: #ffc907;
@@ -153,6 +176,9 @@ const DetailP = styled.p`
   width: 520px;
   font-style: normal;
   margin-top: 35px;
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
 `;
 const Genres = styled.p`
   color: #ffffff;
