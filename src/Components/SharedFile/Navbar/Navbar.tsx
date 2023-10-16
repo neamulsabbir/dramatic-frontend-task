@@ -27,7 +27,6 @@ import logo from "../../../assets/logo.png";
 import Profile from "../../../assets/profile.png";
 import GiftIcon from "../SVGIcon/GiftIcon";
 import BellIcon from "../SVGIcon/BellIcon";
-import { RootState } from "@/redux/store";
 
 const Navbar = () => {
   const [activeRoute, setActiveRoute] = useState("Home");
@@ -35,7 +34,7 @@ const Navbar = () => {
     setActiveRoute(route);
   };
   const dispatch = useDispatch();
-  const isOpen = useSelector((state: RootState) => state.sidebar.isOpen);
+  const isOpen = useSelector((state: any) => state.sidebar.isOpen);
 
   const handleSidebar = () => {
     if (!isOpen) {
