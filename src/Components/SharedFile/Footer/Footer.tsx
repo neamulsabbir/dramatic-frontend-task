@@ -64,10 +64,12 @@ const FooterSection = styled.div`
     align-items: center;
     text-align: center;
   }
-  /* justify-content: space-around; */
 `;
 const LanguageSection = styled.div`
-  display: inline-block;
+  margin-right: 118px;
+  @media screen and (max-width: 1023px) {
+    margin-right: 0px;
+  }
 `;
 const LanguageArea = styled.div`
   display: flex;

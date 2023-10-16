@@ -52,19 +52,19 @@ const Navbar = () => {
           <Image src={logo} alt="logo" />
         </Link>
         <NavItems onClick={() => handleRouteChange("Home")} href="/">
-          <CustomP>HOME</CustomP>
+          <CustomP  active={activeRoute === "Home"}>HOME</CustomP>
           <div className={activeRoute === "Home" ? custom.active : ""}></div>
         </NavItems>
         <NavItems onClick={() => handleRouteChange("Tvshow")} href="/tv-show">
-          <CustomP>TV SHOW</CustomP>
+        <CustomP  active={activeRoute === "Tvshow"}>TV SHOW</CustomP>
           <div className={activeRoute === "Tvshow" ? custom.active : ""}></div>
         </NavItems>
         <NavItems onClick={() => handleRouteChange("Movies")} href="/movies">
-          <CustomP>MOVIES</CustomP>
+          <CustomP  active={activeRoute === "Movies"}>MOVIES</CustomP>
           <div className={activeRoute === "Movies" ? custom.active : ""}></div>
         </NavItems>
         <NavItems onClick={() => handleRouteChange("New")} href="/new">
-          <NewP>NEW</NewP>
+          <NewP active={activeRoute === "New"}>NEW</NewP>
           <div className={activeRoute === "New" ? custom.active : ""}></div>
         </NavItems>
         <InputSection>

@@ -10,7 +10,6 @@ const Bollywood = () => {
         <Title>BOLLYWOOD CLASSICS</Title>
         <MovieList />
       </BollywoodSection>
-      <div></div>
     </div>
   );
 };

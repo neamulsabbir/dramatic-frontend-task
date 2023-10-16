@@ -1,6 +1,10 @@
 import Link from "next/link";
 import styled from "styled-components";
 
+interface TextProps {
+  active: boolean;
+}
+
 export const StickyNavbar = styled.div`
   position: sticky;
   top: 0;
@@ -50,24 +54,23 @@ export const LeftCol = styled.div`
   align-items: center;
   color: white;
 `;
-export const CustomP = styled.p`
+export const CustomP = styled.p<TextProps>`
   margin: 0px;
-  color: #fff;
+  color: ${(props) => (props.active ? "FFF" : "#A1B1CB")};
   font-size: 16px;
   font-family: Montserrat;
   font-weight: 700;
   text-decoration: none;
 `;
-export const NewP = styled.p`
+export const NewP = styled.p<TextProps>`
   margin: 0px;
-  color: #fff;
+  color: ${(props) => (props.active ? "FFF" : "#A1B1CB")};
   font-size: 16px;
   font-family: Montserrat;
   font-weight: 700;
   margin-right: 30px;
   text-decoration: none;
   @media screen and (max-width: 1200px) {
-    /* margin-left: 0px; */
     margin-right: 10px;
   }
 `;
@@ -108,7 +111,7 @@ export const NavItems = styled(Link)`
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  color: red;
+  color: white;
 
   &[active="true"] {
     color: white; 

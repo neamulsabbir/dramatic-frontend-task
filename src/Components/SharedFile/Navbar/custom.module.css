@@ -30,6 +30,6 @@ margin-bottom: -10px;
   display: none;
 }
 .routeActive{
-  color: red;
+  color: rgb(255, 255, 255);
   border-bottom: 2px solid #38BBD8; ;
 }
