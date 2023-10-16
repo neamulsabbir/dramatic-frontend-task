@@ -1,7 +1,7 @@
 "use client";
 import DownArrow from "../SVGIcon/DownArrow";
 import GlobalIcon from "../SVGIcon/GlobalIcon";
-import socialIcon from "../../../assets/Social.svg";
+import socialIcon from "../../../assets/social.svg";
 import Image from "next/image";
 import styled from "styled-components";
 import Link from "next/link";
